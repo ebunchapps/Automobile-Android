@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/linearAccountInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/textViewAccountInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18dp"
+            android:text="Car Deal Details"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearAccountInfo"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/buttonvehicle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="CAR DETAILS"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/buttonfavourities"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="GALLERY"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearlayoutbutton"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+</RelativeLayout>

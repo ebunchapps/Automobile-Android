@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:layout_toRightOf="@+id/images_car"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_make"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:textColor="@color/text_color_red"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:textColor="@color/text_color_black" />
+
+        <LinearLayout
+            android:id="@+id/linearlayouth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textviewyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year:"
+                android:textAppearance="@style/TextAppearanceSmall"
+                android:textColor="@color/text_color_black" />
+
+            <TextView
+                android:id="@+id/text_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearanceSmall"
+                android:textColor="@color/text_color_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:textColor="@color/text_color_black" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/images_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/text_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:textAppearance="@style/TextAppearanceSmall"
+        android:textColor="@color/text_color_black" />
+
+    <ImageView
+        android:id="@+id/images_arrow"
+        android:layout_width="@dimen/thumb_size_small"
+        android:layout_height="@dimen/thumb_size_small"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/images_status"
+        android:layout_width="@dimen/thumb_size"
+        android:layout_height="@dimen/thumb_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" />
+
+</RelativeLayout>

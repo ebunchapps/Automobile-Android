@@ -1,0 +1,37 @@
+<resources>
+
+    <dimen name="general_padding">10dp</dimen>
+    <dimen name="general_padding_small">6dp</dimen>
+    <dimen name="top_bar_height">50dp</dimen>
+    <dimen name="top_bar_height_h">25dp</dimen>
+    <dimen name="top_whitebg_height">80dp</dimen>
+    <dimen name="welcome_to_wedding_top_whitebg_height">150dp</dimen>
+    <dimen name="top_whitebg_height_h">40dp</dimen>
+    <dimen name="back_button_size">50dp</dimen>
+    <dimen name="thumb_size_d2">60dip</dimen>
+    <dimen  name="white_bg_width">114dp</dimen>
+    <dimen name="thumb_size_d">50dip</dimen>
+    <dimen name="thumb_size">35dip</dimen>
+    <dimen name="thumb_size_h">18dip</dimen>
+    <dimen name="thumb_profile">80dip</dimen>
+    <dimen name="thumb_profile_cover">110dip</dimen>
+    <dimen name="thumb_size_small">20dip</dimen>
+    <dimen name="thumb_size_small_h">10dip</dimen>
+    <dimen name="thumb_size_small_h2">5dip</dimen>
+    <dimen name="big_thumb_size">60dip</dimen>
+    <dimen name="big_thumb_padding">5dip</dimen>
+    <dimen name="big_thumb_size_selected">65dip</dimen>
+    <dimen name="d_top_bar_height">80dp</dimen>
+    <dimen name="list_thumb_allsling">120dip</dimen>
+    <dimen name="navigation_icon">30dip</dimen>
+    <dimen name="closebtn">25dp</dimen>
+     <dimen name="thumb_size_h1">20dip</dimen>
+     <dimen name="thumb_size_dd">45dip</dimen>
+     <dimen name="layout_height">60dp</dimen>
+    
+      <dimen name="smallsize">15dp</dimen>
+
+    <dimen name="abc_action_bar_default_height">50dp</dimen>
+    
+
+</resources>

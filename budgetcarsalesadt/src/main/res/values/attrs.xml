@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="fonts">
+        <attr name="fonttype" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SquareImage">
+        <attr name="fixedAlong" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ColorSupplied">
+        <attr name="isColorSupplied" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="TextView">
+        <attr name="istoscale" format="boolean"></attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/realtive_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/images_car"
+            android:textAppearance="@style/TextAppearanceLarge"
+            android:textColor="@color/text_color_blue" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_name"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/images_car"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textColor="@color/text_color_orange" />
+        
+
+        <ImageView
+            android:id="@+id/images_car"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/car1"
+            />
+
+        <ImageView
+            android:id="@+id/button_more"
+            android:layout_width="@dimen/thumb_profile"
+            android:layout_height="@dimen/thumb_profile"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:src="@drawable/morebutton" />
+    </RelativeLayout>
+
+</RelativeLayout>

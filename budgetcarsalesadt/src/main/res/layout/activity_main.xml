@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/line_top"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/accordingto_appcolor" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/white_bg_width"
+            android:layout_height="@dimen/thumb_size_d2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logos"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/relative_layout1"
+        android:background="@drawable/shadowborder" >
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/contanier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line_bottom"
+        android:layout_below="@+id/relative_shadow" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutprogressbarheader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height"
+        android:layout_below="@+id/relative_shadow"
+        android:background="@color/accordingto_appcolor"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Loading Data..." />
+
+        <ProgressBar
+            android:id="@+id/myprogressbar"
+            style="?android:attr/progressBarStyleLargeInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/text"
+            android:progress="0" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_above="@+id/relative_layout_buttons"
+        android:background="@color/accordingto_appcolor" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativelayout_bottombutton"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/button_deals"
+            android:layout_width="@dimen/thumb_size_dd"
+            android:layout_height="@dimen/thumb_size_dd"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_hovered" />
+
+        <ImageView
+            android:id="@+id/button_tools"
+            android:layout_width="@dimen/thumb_size_dd"
+            android:layout_height="@dimen/thumb_size_dd"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_deals"
+            android:background="@drawable/tools" />
+
+        <ImageView
+            android:id="@+id/button_information"
+            android:layout_width="@dimen/thumb_size_dd"
+            android:layout_height="@dimen/thumb_size_dd"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_tools"
+            android:background="@drawable/information" />
+
+        <ImageView
+            android:id="@+id/button_inventroy"
+            android:layout_width="@dimen/thumb_size_dd"
+            android:layout_height="@dimen/thumb_size_dd"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_information"
+            android:background="@drawable/inventory" />
+
+        <ImageView
+            android:id="@+id/button_news"
+            android:layout_width="@dimen/thumb_size_dd"
+            android:layout_height="@dimen/thumb_size_dd"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_inventroy"
+            android:background="@drawable/news" />
+
+        <ImageView
+            android:id="@+id/button_services"
+            android:layout_width="@dimen/thumb_size_dd"
+            android:layout_height="@dimen/thumb_size_dd"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_news"
+            android:background="@drawable/services"
+
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_bottombutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_copyright"
+        android:layout_centerInParent="true" >
+
+        <Button
+            android:id="@+id/button_facebook"
+            android:layout_width="@dimen/top_bar_height_h"
+            android:layout_height="@dimen/top_bar_height_h"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/facebook"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_twitter"
+            android:layout_width="@dimen/top_bar_height_h"
+            android:layout_height="@dimen/top_bar_height_h"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_facebook"
+            android:background="@drawable/twitter"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_google"
+            android:layout_width="@dimen/top_bar_height_h"
+            android:layout_height="@dimen/top_bar_height_h"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_twitter"
+            android:background="@drawable/google"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_digg"
+            android:layout_width="@dimen/top_bar_height_h"
+            android:layout_height="@dimen/top_bar_height_h"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_google"
+            android:background="@drawable/digg"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_youtube"
+            android:layout_width="@dimen/top_bar_height_h"
+            android:layout_height="@dimen/top_bar_height_h"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_digg"
+            android:background="@drawable/youtube"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/general_padding_small"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/line" />
+
+</RelativeLayout>

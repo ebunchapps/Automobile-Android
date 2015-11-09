@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height"
+        android:layout_below="@+id/relative_layout1"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/text_daels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Inventory"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edittextsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout_blue"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:hint="Search"
+        android:paddingLeft="10dp"
+        android:paddingTop="4dp"
+        android:singleLine="true"
+        android:paddingBottom="4dp"
+        android:textColorHint="@color/gray"
+        android:textSelectHandleLeft="@color/black"
+        android:drawableLeft="@drawable/iconography_actionbar_style"
+        android:textColor="@color/gray" />
+    <requestFocus />
+
+    <!--android:drawableLeft="@drawable/abc_ic_search"-->
+
+    <TextView
+        android:id="@+id/addText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/for_inventories"
+        android:textAppearance="@style/TextAppearanceMedium"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/accordingto_appcolor"/>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edittextsearch"
+        android:layout_margin="5dp"
+        android:divider="@drawable/bg"
+        android:dividerHeight="5dp" >
+    </ListView>
+
+</RelativeLayout>

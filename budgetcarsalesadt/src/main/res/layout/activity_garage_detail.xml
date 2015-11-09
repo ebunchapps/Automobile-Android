@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/toplineborder"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/accordingto_appcolor" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/back_button_size"
+        android:layout_below="@+id/toplineborder"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/white_bg_width"
+            android:layout_height="@dimen/thumb_size_d2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logo"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/relative_layout1"
+        android:background="@drawable/shadowborder" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearAccountInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height"
+        android:layout_below="@+id/relative_shadow"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/textViewAccountInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18dp"
+            android:text="@string/title_GarageDetail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <android.support.v4.app.FragmentTabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearAccountInfo" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/abc_action_bar_default_height"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+				
+                android:tabStripEnabled="false" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white" />
+        </LinearLayout>
+    </android.support.v4.app.FragmentTabHost>
+
+</RelativeLayout>

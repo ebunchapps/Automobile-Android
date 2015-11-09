@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/edittextcolor"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+
+    <LinearLayout
+        android:id="@+id/linearlayoutmain"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textownedmanual"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@color/orange"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="5dp"
+                android:text="OWNED MANUAL"
+                android:textSize="12sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textviewKms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.2"
+                android:gravity="right|center"
+                android:padding="2dp"
+                android:text="Kms"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textKms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.4"
+                android:gravity="left|center"
+                android:padding="2dp"
+                android:text="46546Kms"
+                
+                android:textColor="@color/gray" />
+
+            <ImageView
+                android:id="@+id/images_arrow"
+                android:layout_width="@dimen/thumb_size_small"
+                android:layout_height="@dimen/thumb_size_small"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayoutmake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textviewmake"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.2"
+                android:gravity="left|center_horizontal"
+                android:padding="3dp"
+                android:text="MAKE :"
+              
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/textmake"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5"
+                android:background="@color/edittextcolor"
+                android:padding="3dp"
+                android:text="Subaru"
+                
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayoutmodel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textviewmodel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.2"
+                android:gravity="left|center_horizontal"
+                android:padding="3dp"
+                android:text="MODEL :"
+               
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/textmodel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5"
+                android:background="@color/edittextcolor"
+                android:padding="3dp"
+                android:text="Outback"
+              
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayoutyear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textviewyear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="11dp"
+                android:layout_weight="0.2"
+                android:gravity="left|center_horizontal"
+                android:padding="3dp"
+                android:text="YEAR :"
+               
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/textyear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5"
+                android:background="@color/edittextcolor"
+                android:padding="3dp"
+                android:text="2014"
+               
+                android:textColor="@color/gray" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearlayoutStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textviewstatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="11dp"
+                android:layout_weight="0.2"
+                android:gravity="left|center_horizontal"
+                android:padding="3dp"
+                android:text="YEAR :"
+
+                android:textColor="@color/gray"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textstatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5"
+                android:background="@color/edittextcolor"
+                android:padding="3dp"
+                android:text="2014"
+
+                android:textColor="@color/gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

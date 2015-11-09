@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+   <RelativeLayout
+        android:id="@+id/relative_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/line_top"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/accordingto_appcolor" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/white_bg_width"
+            android:layout_height="@dimen/thumb_size_d2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logo"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout 
+       android:id="@+id/relative_shadow"
+       android:layout_height="10dp"
+       android:layout_width="match_parent"
+       android:background="@drawable/shadowborder"
+       android:layout_below="@+id/relative_layout1"
+       ></RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+       android:layout_below="@+id/relative_shadow" />
+    
+</RelativeLayout>

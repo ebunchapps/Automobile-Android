@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height"
+        android:layout_below="@+id/relative_layout1"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/texttitleMake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Vehicle Receipt"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/relativelayoutprogressbarheader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height"
+        android:layout_below="@+id/relative_shadow"
+        android:background="@color/accordingto_appcolor"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Loading Data..." />
+
+        <ProgressBar
+            android:id="@+id/myprogressbar"
+            style="?android:attr/progressBarStyleLargeInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/text"
+            android:progress="0" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout_blue"
+       
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/textadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Receipt"
+            android:layout_marginRight="5dp"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/buttonadd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/imagesplus"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearlayout"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:clickable="true"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+</RelativeLayout>

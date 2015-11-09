@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height"
+        android:layout_below="@+id/relative_layout1"
+
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/text_tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="News"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+   <ListView 
+       android:id="@+id/listview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/relative_layout_blue"
+       android:background="@color/white"
+       android:divider="@color/edittextcolor"
+       android:layout_margin="5dp"
+       android:dividerHeight="5dp"
+       >
+       
+   </ListView>
+    <TextView
+        android:id="@+id/addText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/for_news"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearanceMedium"
+        android:layout_centerInParent="true"
+        android:textColor="@color/accordingto_appcolor"/>
+</RelativeLayout>

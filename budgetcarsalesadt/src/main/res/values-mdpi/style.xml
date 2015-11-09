@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearanceLarge">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearanceMedium">
+        <item name="android:lineSpacingMultiplier">@dimen/text_line_spacing</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearanceSmall2">
+        <item name="android:lineSpacingMultiplier">@dimen/text_line_spacing</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+    <style name="TextAppearanceSmall">
+        <item name="android:lineSpacingMultiplier">@dimen/text_line_spacing</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

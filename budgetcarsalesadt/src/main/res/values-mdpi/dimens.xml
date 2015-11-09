@@ -1,0 +1,24 @@
+<resources>
+
+    <dimen name="general_padding">7dp</dimen>
+    <dimen name="general_padding_small">4dp</dimen>
+    <dimen name="top_bar_height">40dp</dimen>
+    
+    <dimen name="top_bar_height_h">20dp</dimen>
+    <dimen name="top_whitebg_height">70dp</dimen>
+    <dimen name="welcome_to_wedding_top_whitebg_height">140dp</dimen>
+    <dimen name="top_whitebg_height_h">35dp</dimen>
+    <dimen name="back_button_size">32dp</dimen>
+    <dimen name="d_top_bar_height">60dp</dimen>
+    <dimen name="list_thumb_allsling">100dip</dimen>
+    <dimen name="navigation_icon">20dip</dimen>
+    <dimen name="closebtn">20dp</dimen>
+    
+     <dimen name="layout_height">70dp</dimen>
+     
+      <dimen name="smallsize">10dp</dimen>
+    <dimen name="abc_action_bar_default_height">34dp</dimen>
+
+    <dimen name="thumb_size_d2">40dip</dimen>
+    <dimen  name="white_bg_width">76dp</dimen>
+</resources>

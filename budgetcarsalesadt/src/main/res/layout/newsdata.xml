@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutfb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <TextView
+            android:id="@+id/fbtype"
+            android:layout_width="@dimen/closebtn"
+            android:layout_height="@dimen/closebtn"
+            android:layout_margin="5dp"
+
+            android:background="@drawable/facebook" />
+
+
+        <TextView
+            android:id="@+id/textviewdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/accordingto_appcolor"
+            android:text="kjllh"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayouttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fbtype"
+            android:layout_margin="10dp" >
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textviewtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:singleLine="true"
+                     android:text="kjhk"
+                    android:textColor="@color/text_color_red" />
+
+                <TextView
+                    android:id="@+id/textviewdesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:singleLine="true"
+                     android:text="kjhk"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayoutlocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textviewtypelocal"
+            android:layout_width="@dimen/closebtn"
+            android:layout_height="@dimen/closebtn"
+            android:layout_margin="5dp"
+            android:background="@drawable/rss_icon" />
+
+        <TextView
+            android:id="@+id/textviewdatelocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/accordingto_appcolor"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutflocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewtypelocal"
+            android:layout_margin="10dp" >
+
+            <LinearLayout
+                android:id="@+id/linearlayouth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayoutv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textviewtitlel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color_red" />
+
+                    <TextView
+                        android:id="@+id/textviewsubtitlel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/linearlayouthorizontallocal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textviewdescl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/accordingto_appcolor" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/contectno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

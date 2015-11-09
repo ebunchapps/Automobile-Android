@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/images_car"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/TextAppearanceLarge"
+            android:textColor="@color/text_color_red"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:textColor="@color/text_color_black" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/images_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/button_more"
+        android:layout_width="@dimen/thumb_size_d"
+        android:layout_height="@dimen/thumb_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/arrow" />
+
+</RelativeLayout>

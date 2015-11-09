@@ -1,0 +1,348 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <TextView
+        android:id="@+id/toplineborder"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/accordingto_appcolor" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplineborder"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/white_bg_width"
+            android:layout_height="@dimen/thumb_size_d2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logos"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/relative_layout1"
+        android:background="@drawable/shadowborder" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearAccountInfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height"
+        android:layout_below="@+id/relative_shadow"
+        android:background="@color/black"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewAccountInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Sign In"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_signup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_below="@+id/linearAccountInfo"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textviewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="Sign in to your account"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_shadows"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/relative_signup"
+        android:background="@drawable/shadowborder" >
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_shadows"
+        android:background="@drawable/bg" >
+
+        <RelativeLayout
+            android:id="@+id/relative_formFields"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp" >
+
+                <RelativeLayout
+                    android:id="@+id/relativelayoutfb"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/abc_action_bar_default_height"
+                    android:background="@color/facebuttoncolor" >
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/abc_action_bar_default_height"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="@dimen/abc_action_button_min_width"
+                            android:layout_height="@dimen/back_button_size"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:padding="8dp"
+                            android:src="@drawable/fb_icon" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/linebluecolor" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="15dp" >
+
+                        <TextView
+                            android:id="@+id/textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sign in with"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textview"
+                            android:text="Facebook"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativetwitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/abc_action_bar_default_height"
+                    android:layout_below="@+id/relativelayoutfb"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="@color/twitterbuttoncolor" >
+
+                    <LinearLayout
+                        android:id="@+id/lineart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/abc_action_bar_default_height"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="@dimen/abc_action_button_min_width"
+                            android:layout_height="@dimen/back_button_size"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:padding="12dp"
+                            android:src="@drawable/twitter_icon" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/linetwittercolor"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="15dp" >
+
+                        <TextView
+                            android:id="@+id/textviewt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sign in with"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textviewt"
+                            android:text="Twitter"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativelayoutgoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/abc_action_bar_default_height"
+                    android:layout_below="@+id/relativetwitter"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/googlebuttoncolor" >
+
+                    <LinearLayout
+                        android:id="@+id/linearg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/abc_action_bar_default_height"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="@dimen/abc_action_button_min_width"
+                            android:layout_height="@dimen/back_button_size"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:src="@drawable/google_icon" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/lineredcolor"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="15dp" >
+
+                        <TextView
+                            android:id="@+id/textviewg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sign in with"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/textviewg"
+                            android:text="Google+"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayout"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:text="OR"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_color_gray" />
+
+            <TextView
+                android:id="@+id/textsignin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textor"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:text="Sign in with your own account"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_color_gray" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_bottombutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_copyright"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="1dp" >
+
+        <Button
+            android:id="@+id/button_facebook"
+            android:layout_width="@dimen/top_bar_height_h"
+            android:layout_height="@dimen/top_bar_height_h"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/facebook" />
+
+        <Button
+            android:id="@+id/button_twitter"
+            android:layout_width="@dimen/top_bar_height_h"
+            android:layout_height="@dimen/top_bar_height_h"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_facebook"
+            android:background="@drawable/twitter" />
+
+        <Button
+            android:id="@+id/button_google"
+            android:layout_width="@dimen/top_bar_height_h"
+            android:layout_height="@dimen/top_bar_height_h"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_twitter"
+            android:background="@drawable/google" />
+
+        <Button
+            android:id="@+id/button_digg"
+            android:layout_width="@dimen/top_bar_height_h"
+            android:layout_height="@dimen/top_bar_height_h"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_google"
+            android:background="@drawable/digg" />
+
+        <Button
+            android:id="@+id/button_youtube"
+            android:layout_width="@dimen/top_bar_height_h"
+            android:layout_height="@dimen/top_bar_height_h"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/button_digg"
+            android:background="@drawable/youtube" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/general_padding_small"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/line" />
+
+</RelativeLayout>

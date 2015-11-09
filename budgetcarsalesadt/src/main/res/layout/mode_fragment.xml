@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height"
+        android:layout_below="@+id/relative_layout1"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/text_daels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Model"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/addText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/for_roadassistance"
+        android:textAppearance="@style/TextAppearanceMedium"
+        android:layout_margin="5dp"
+        android:textColor="@color/accordingto_appcolor"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_blue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height"
+        android:layout_below="@+id/relative_layout1"
+
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/text_daels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Deals"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout_blue"
+        android:paddingBottom="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/text_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            
+            android:text="@string/textdeal"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:textColor="@color/text_color_red" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative_shadows"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/relative_layout_title"
+        android:background="@drawable/shadowborder" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_shadows" >
+
+        <TextView
+            android:id="@+id/addText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/for_deals"
+            android:textAppearance="@style/TextAppearanceMedium"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="@color/accordingto_appcolor"/>
+        <!--<ListView-->
+            <!--android:id="@+id/listviewdeals"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:divider="@drawable/bg"-->
+            <!--android:dividerHeight="10dp"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_height="match_parent"-->
+             <!-->-->
+        <!--</ListView>-->
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/listviewdeals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/bg"
+            android:dividerHeight="10dp"
+            android:layout_margin="5dp"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="pullFromStart" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </RelativeLayout>
+
+</RelativeLayout>

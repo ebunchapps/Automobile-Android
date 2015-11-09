@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearlayouth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageViewCarImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/facebook" 
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linearlayoutverticaltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TEXT"
+                        android:layout_margin="5dp"
+                        
+                        android:textColor="@color/text_color_gray" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="TEXT"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/linearlayoutkm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textviewkm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KM:"
+                            android:textColor="@color/text_color_gray" 
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/textkm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TEXT"
+                            android:visibility="gone"
+                            android:textColor="@color/text_color_gray" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttoncallseller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@color/green"
+                android:text="Save to Garage"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textviewdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textdesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="TEXT"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

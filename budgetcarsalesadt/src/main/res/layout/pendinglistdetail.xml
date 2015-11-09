@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ScrollView
+        android:id="@+id/scrolltext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearlayoutmain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textownedmanual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.8"
+                    android:background="@color/orange"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:paddingTop="5dp"
+                    android:text="OWNED MANUAL"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/textKms"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center"
+                    android:padding="5dp"
+                    android:text="46546Kms"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/texttime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.4"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="4.00"
+                    android:textColor="@color/gray"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayoutmake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textviewmake"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="left|center_horizontal"
+                    android:padding="3dp"
+                    android:text="MAKE :"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/textmake"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/edittextcolor"
+                    android:padding="3dp"
+                    android:text="Subaru"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayoutmodel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textviewmodel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="left|center_horizontal"
+                    android:padding="3dp"
+                    android:text="MODEL :"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/textmodel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/edittextcolor"
+                    android:padding="3dp"
+                    android:text="Outback"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayoutyear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textviewyear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="0.2"
+                    android:gravity="left|center_horizontal"
+                    android:padding="3dp"
+                    android:text="YEAR :"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/textyear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/edittextcolor"
+                    android:padding="3dp"
+                    android:text="2014"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrolltextt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textaboutservice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/blue_border_white_bg"
+                    android:editable="false"
+                    android:gravity="left"
+                    android:lines="3"
+                    android:padding="6dp"
+                    android:text="asgdh  dgfdhj afhckjh dhskh asgdh  dgfdhj afhckjh dhskh asgdh  dgfdhj afhckjh dhskhasgdh  sgdh  dgfdhj afhckjh dhskh asgdh  dgfdhj afhckjh dhskh asgdh  dgfdhj afhckjh dhskhasgdh  d dgfdhj afhckjh dhskhasgdh  dgfdhj afhckjh dhskh asgdh  dgfdhj afhckjh dhskh asgdh  dgfdhj afhckjh dhskhasgdh  dgfdhj afhckjh dhskh asgdh  dgfdhj afhckjh dhskh asgdh  dgfdhj afhckjh dhskh asgdh  dgfdhj afhckjh dhskhasgdh  dgfdhj afhckjh dhskhasgdh  dgfdhj afhckjh dhskh "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray" />
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/scrolladdtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/blue_border_white_bg"
+                    android:gravity="left"
+                    android:lines="5"
+                    android:padding="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray" />
+
+                <requestFocus />
+            </ScrollView>
+
+
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1.0"
+                android:isIndicator="false"
+                android:clickable="true"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/buttonsave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonselector"
+                android:text="SAVE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

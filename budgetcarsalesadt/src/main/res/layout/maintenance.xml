@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/addText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/for_maintenance"
+        android:textAppearance="@style/TextAppearanceMedium"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/accordingto_appcolor"/>
+    <TextView
+        android:id="@+id/selectCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:text="Select a Category"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linearTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearTabs">
+
+        <LinearLayout
+            android:id="@+id/linearspinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="2dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/txtModel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text=" Select a Model"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinnermodel"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/spinner"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="2dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/txtyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text=" Select a Year"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinneryear"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/spinner"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="2dp"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/txtvehicle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Select a Vehicle"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinnervehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/spinner"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/pdfbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="See Full Detail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/buttonselector"/>
+            <TextView
+                android:id="@+id/searchInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:text="Fill information for search"/>
+
+
+            <LinearLayout
+                android:id="@+id/layoutkmsandmonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/kms"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/blue_border_white_bg"
+                    android:hint="Kms"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"></EditText>
+
+                <EditText
+                    android:id="@+id/month"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/blue_border_white_bg"
+                    android:hint="Month"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"></EditText>
+
+                <TextView
+                    android:id="@+id/searchkmsandmonth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/buttonselector"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="Search" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layoutdescandprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|top"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Price:"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|top"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="3343"
+                        android:textColor="@color/accordingto_appcolor" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Description:"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="asdh"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
